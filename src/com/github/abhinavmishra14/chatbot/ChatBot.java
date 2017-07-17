@@ -56,7 +56,7 @@ public class ChatBot extends JFrame {
 					} else if (decider == 2) {
 						botResponse("Please rephrase that");
 					} else if (decider == 3) {
-						botResponse("???");
+						botResponse("I am not sure.");
 					}
 				}
 				typingAreaTxt.setText("");
