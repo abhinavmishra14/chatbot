@@ -15,17 +15,16 @@ public class ChatBot extends JFrame {
 	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 2467686849887115320L;
 
-	// Typing Area:
+	/** The typing area txt. */
 	private final JTextField typingAreaTxt = new JTextField();
 
-	// Chat Area:
+	/** The chat area. */
 	private final JTextArea chatArea = new JTextArea();
 
 	/**
 	 * Instantiates a new my bot.
 	 */
 	public ChatBot() {
-		// Frame Attributes:
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setSize(600, 600);
 		this.setVisible(true);
@@ -33,11 +32,9 @@ public class ChatBot extends JFrame {
 		this.setLayout(null);
 		this.setTitle("MyChatBot");
 
-		// txtEnter Attributes:
 		typingAreaTxt.setLocation(2, 540);
 		typingAreaTxt.setSize(590, 30);
 
-		// txtEnter Action Event:
 		typingAreaTxt.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(final ActionEvent actionEvent) {
@@ -66,12 +63,10 @@ public class ChatBot extends JFrame {
 			}
 		});
 
-		// txtChat Attributes:
 		chatArea.setLocation(15, 5);
 		chatArea.setSize(560, 510);
 		chatArea.setEditable(false);
 
-		// Add Items To Frame:
 		this.add(typingAreaTxt);
 		this.add(chatArea);
 	}
